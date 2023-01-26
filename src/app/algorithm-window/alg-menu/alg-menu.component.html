@@ -1,0 +1,51 @@
+<div class="alg-menu">
+  <form #myForm="ngForm" (submit)="submitForm(myForm)" novalidate>
+    <h5>Choisissez l'algorithme</h5>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="alg-type" value="backTracking" id="flexRadioDefault1" ngModel required>
+      <label class="form-check-label" for="flexRadioDefault1">
+        BackTracking
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="alg-type" value="alt-algorithm" id="flexRadioDefault2" ngModel required>
+      <label class="form-check-label" for="flexRadioDefault2">
+        Propagation des contraintes
+      </label>
+    </div>
+ <br>
+    <h5>Choisir la vitesse d'exécution de l'algorithme</h5>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="alg-speed" value="1" id="flexRadioDefault3" checked ngModel required>
+      <label class="form-check-label" for="flexRadioDefault3">
+        x1
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="alg-speed" value="2" id="flexRadioDefault4"  ngModel required>
+      <label class="form-check-label" for="flexRadioDefault4">
+        x2
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="alg-speed" value="5" id="flexRadioDefault5"  ngModel required>
+      <label class="form-check-label" for="flexRadioDefault5">
+        x5
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="alg-speed" value="10" id="flexRadioDefault6"  ngModel required>
+      <label class="form-check-label" for="flexRadioDefault6">
+        x10
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="alg-speed" value="999" id="flexRadioDefault7"  ngModel required>
+      <label class="form-check-label" for="flexRadioDefault7">
+        Spontanément
+      </label>
+    </div>
+
+    <button style="width: 100%; margin-top: 20px" type="submit" class="btn btn-success" [disabled]="isStarted"> Commencez</button>
+  </form>
+</div>

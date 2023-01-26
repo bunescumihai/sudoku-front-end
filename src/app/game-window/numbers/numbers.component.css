@@ -1,0 +1,13 @@
+#numbers{
+  width: 100%;
+  margin:20px 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nr{
+  width: 500px;
+  height: 50px;
+  background-color: red;
+}

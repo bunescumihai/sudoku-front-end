@@ -1,0 +1,9 @@
+#menu{
+  width: 350px;
+  height: 100%;
+  border: 1px solid dodgerblue;
+  border-radius: 10px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+}

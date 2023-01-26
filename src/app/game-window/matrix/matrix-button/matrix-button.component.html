@@ -1,0 +1,3 @@
+<button class="matrix-button" [ngClass]="{'selected': isSelected(), 'deactivated': isActive(), 'solved': isSolved()}" (click)="select()">
+  <h6 [ngClass]="{'bad': isBad()}">{{button.number? button.number : ""}} </h6>
+</button>

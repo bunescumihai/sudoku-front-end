@@ -1,0 +1,4 @@
+<button class="alg-matrix-button" [ngClass]="{'deactivated': isActive(), 'solved': isSolved()}">
+  <h6 *ngIf="!isEmpty()" [ngClass]="{'bad': isBad()}"> {{button.number? button.number : ""}} </h6>
+  <h6 class="possibilities" *ngIf="isEmpty()" [ngClass]="{'one-value': oneValue()}"> {{possibleValuesInEmptyCell}} </h6>
+</button>

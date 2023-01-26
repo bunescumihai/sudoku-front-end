@@ -1,0 +1,21 @@
+<div class="bloc-principal">
+  <div class="bloc-auth">
+    <form>
+      <label><h3>Nouveau nom d'utilisateur:</h3></label>
+      <input type="text" class="form-control" maxlength="30" [(ngModel)]="login" name="login">
+      <h6 *ngIf="!loginLengthValid" style="color:red">Le nom d'utilisateur est trop court, min 8 caractères</h6>
+      <label><h3>Nouveau mot de passe:</h3></label>
+      <input type="password" class="form-control" maxlength="30" [(ngModel)]="password" name="password">
+      <h6 *ngIf="!passwordLengthValid" style="color:red">Le mot de passe est trop court, min 8 caractères</h6>
+      <label><h3>Confirmez mot de passe:</h3></label>
+      <input type="password" class="form-control" maxlength="30" [(ngModel)]="confirmPassword" name="confirmPassword">
+      <button type="button" class="btn btn-outline-primary" style="width: 100%; margin-top: 20px" (click)="onReg()"> Enregistrez-vous </button>
+      <h6 *ngIf="!passwordsMatch" style="color:red">Les mots de passe ne correspondent pas</h6>
+    </form>
+    <br>
+    <div class="row justify-content-between" style="display: flex">
+      <a href=".." style="width: auto">Page d'accueil</a>
+      <a href="../auth" style="width: auto"><h6>Authentification</h6></a>
+    </div>
+  </div>
+</div>

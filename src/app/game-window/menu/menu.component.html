@@ -1,0 +1,6 @@
+<div id="menu">
+  <button type="button" class="btn btn-outline-dark" style="margin-bottom: 10px;" (click)="resetMap()"> Réinitialiser le jeu</button>
+  <button type="button" class="btn btn-outline-dark" style="margin-bottom: 10px;" *ngIf="isAuth() && !isSolved()" (click)="saveMapProgress()"> Sauvegardez le jeu</button>
+  <h3 *ngIf="isSolved()">Bravo, vous avez résolu le jeu</h3>
+  <a href="http://localhost:4200/game" class="btn btn-outline-success" *ngIf="isSolved()"> Nouveau jeu </a>
+</div>

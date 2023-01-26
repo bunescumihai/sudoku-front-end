@@ -1,0 +1,18 @@
+<div class="bloc-principal">
+  <div class="bloc-auth">
+    <form>
+      <label><h3>Nom d'utilisateur:</h3></label>
+      <input type="text" class="form-control" maxlength="30" [(ngModel)]="login" name="login">
+      <label><h3>Mot de passe:</h3></label>
+      <input type="password" class="form-control" maxlength="30" [(ngModel)]="password" name="password">
+      <button type="button" class="btn btn-outline-primary" (click)="onSignIn()" style="width: 100%; margin-top: 20px">Connectez-vous </button>
+      <h6 *ngIf="authError" style="color:red"> Vous n'avez pas saisi le bon nom d'utilisateur et/ou mot de passe !</h6>
+    </form>
+    <br>
+    <div class="row justify-content-between" style="display: flex">
+      <a href=".." style="width: auto">Page d'accueil</a>
+      <a routerLink="../reg" style="width: auto"><h6>Inscrivez-vous</h6></a>
+    </div>
+  </div>
+</div>
+

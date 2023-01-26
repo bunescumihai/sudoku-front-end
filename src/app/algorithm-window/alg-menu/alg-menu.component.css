@@ -1,0 +1,8 @@
+.alg-menu{
+  width: 350px;
+  height: 500px;
+  border-radius: 8px;
+  border: 1px solid dodgerblue;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.59);
+}

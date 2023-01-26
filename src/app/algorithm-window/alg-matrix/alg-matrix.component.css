@@ -1,0 +1,48 @@
+#alg-matrix{
+  width: 540px;
+  height: 540px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+#orizontal-line-1{
+  display: block;
+  position: absolute;
+  width: 540px;
+  height: 2px;
+  top:180px;
+  left: 0;
+  background-color: red;
+}
+
+#orizontal-line-2{
+  display: block;
+  position: absolute;
+  width: 540px;
+  height: 2px;
+  top:360px;
+  left: 0;
+  background-color: red;
+}
+
+#vertical-line-1{
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 540px;
+  top:0px;
+  left: 180px;
+  background-color: red;
+}
+
+#vertical-line-2{
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 540px;
+  top:0px;
+  left: 360px;
+  background-color: red;
+}

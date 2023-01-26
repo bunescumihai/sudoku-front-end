@@ -1,0 +1,18 @@
+#alg-window{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#alg-window app-alg-menu{
+
+}
+
+.alg-matrix-and-alg-menu{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

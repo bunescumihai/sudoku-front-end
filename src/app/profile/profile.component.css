@@ -1,0 +1,40 @@
+.main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont{
+  width: 800px;
+  height: auto;
+  position: relative;
+  border-radius: 10px;
+  background-color: #efefef;
+  padding: 10px 8px;
+  display: flex;
+}
+
+.info{
+  width: 40%;
+  height: 100%;
+}
+
+.progress{
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+  display: block;
+  background-color: inherit;
+}
+
+.choice{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: inherit;
+}
+
+hr{
+  border: 2px solid black;
+}
